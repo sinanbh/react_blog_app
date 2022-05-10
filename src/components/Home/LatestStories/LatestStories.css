@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:display=swap');
+
+.LatestStories {
+    width: 80%;
+    margin: 64px auto;
+}
+
+.latest-stories-heading {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #F08080;
+    width: fit-content;
+}
+
+.latest-stories-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 48px 0px;
+    padding: 48px 0px;
+    border-top: 3px solid #F0F0F0;
+    border-bottom: 3px solid #F0F0F0;
+    gap: 32px;
+}
+
+.LatestStoriesComponent {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.LatestStoriesComponent a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.latest-stories-title {
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.latest-stories-title:hover {
+    background-position: 0;
+}
+
+.LatestStoriesComponent p {
+    font-size: 17px;
+    color: #908D8D;
+    margin-top: 20px;
+}
+
+.latest-stories-details {
+    margin: 60px 0px 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: #404040;
+    font-size: 17px;
+}
+
+.latest-stories-type {
+    font-weight: 600;
+}
+
+.latest-stories-date {
+    letter-spacing: 0.85px;
+    opacity: 0.48;
+}
+
+.view-more {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 48px 0 140px;
+    color: #A2A2A2;
+    font-family: 'Montserrat', sans-serif;
+    width: fit-content;
+}
+
+.view-more i {
+    color: #F08080;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1120px) {
+
+    .latest-stories-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .LatestStoriesComponent {
+        width: 100%;
+    }
+
+    .latest-stories-details {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .latest-stories-heading {
+        font-size: 28px;
+    }
+
+    .latest-stories-title {
+        font-size: 20px;
+    }
+
+    .LatestStoriesComponent p, .latest-stories-details {
+        font-size: 16px;
+    }
+}
